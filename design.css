@@ -1,0 +1,336 @@
+body {
+    font-family: Poppins;
+ background-color: white;
+}
+
+.title-font {
+    color: #3a3a3a;
+    font-size: 3.25rem;
+    font-weight: 700;
+}
+
+.des-font {
+    color: #3a3a3a;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background: #e02c6d;
+    border: none;
+
+}
+
+/* nav start here */
+
+
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-title {
+    color: #3a3a3a;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav-item {
+    font-size: 1rem;
+}
+
+.nav-co {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    text-decoration: none;
+    margin-left: 2.2rem;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+}
+
+
+
+/* main section start here */
+
+
+
+/* preebook section start here */
+
+
+
+
+.preebook-container {
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid black; */
+    margin: 0px 25vh 0vh 25vh;
+}
+
+.preebook-description {
+    padding-right: 30rem;
+    padding-left: 1rem;
+}
+
+.btn {
+    border-radius: 20px;
+
+}
+
+.btn:hover {
+    background-color: black;
+}
+
+.btn1-text {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1.2rem;
+    text-align: center;
+    border: 1px solid black;
+
+}
+
+.preebook-visual-item {
+    width: 100%;
+    background-image: url(images/Circledesign.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.preebooking-image {
+    width: 100%;
+    height: 100%;
+}
+
+/* sponsor logo section */
+
+.sponsor-section {
+    margin: 3rem 25vh 0vh 25vh;
+}
+
+.sponsor-container {
+    display: flex;
+    justify-content: center;
+}
+
+.sponsor-item {
+    margin-right: 3.72rem;
+    padding: 2rem;
+}
+
+/* popular section start here */
+
+.popular-section {
+    margin: 3rem 30vh 0vh 30vh;
+    
+}
+
+.popular-title {
+    text-align: center;
+
+}
+
+.card-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.card-content {
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+    width: fit-content;
+    
+}
+.card-img{
+    width: 100%;
+    border-radius: 0.4rem;
+}
+.card-title{
+    color: #18191f;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.card-price{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.card-details{
+    color: #787885;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.see-more{
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.see-more-btn{
+    color: #e02c6d;
+    background: transparent;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    padding: 1rem;
+}
+.see-more-btn:hover{
+    background-color: yellow;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    
+}
+/* featured product start here */
+
+.featured-section{
+    margin: 3rem 30vh 5vh 30vh;
+}
+
+.featured-container{
+    display: flex;
+    justify-content: space-between;
+}
+.ft-img{
+    border-radius: 7px;
+}
+.join-btn{
+    padding:1.1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 10px;
+    color: white;
+}
+.join-btn:hover{
+    background-color: black;
+}
+.featured-img, .featured-description{
+    flex: 1;
+}
+.featured-img{
+    align-self: center;
+}
+        /* footer start here */
+
+.footer-section{
+    background-color:#0A0826 ;
+}
+.footer-container{
+    text-align: center;
+    padding: 5rem 30rem 5rem 32rem; 
+}
+.footer-title{
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 700;
+
+}
+.footer-copyright{
+    color: #FFF;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+/* Mobile devices */
+@media screen and (min-width: 447px) and (max-width: 768px) {
+    .nav-container {
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-co {
+        text-align: center;
+
+    }
+
+    .nav-item {
+        margin-left: 1.2rem;
+    }
+
+    /* preebook section */
+    .preebook-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0px;
+    }
+
+    .preebooking-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .preebook-description {
+        padding-right: 0rem;
+        text-align: center;
+        justify-self: center;
+    }
+
+    /* sponsor section start here */
+
+    .sponsor-section {
+        margin: none;
+    }
+
+    .sponsor-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+
+    .sponsor-item {
+        margin: 0px;
+        padding: none;
+    }
+        /* popular section start here */
+
+        .popular-section{
+            margin:0px;
+            
+        }
+        
+        .card-items{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        /* featured product start here */
+        .featured-section{
+            margin: 10px;
+            align-items: center;
+        }
+        .featured-container{
+            flex-direction: column-reverse;
+        }
+        .featured-description{
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .featured-img{
+            margin-bottom: 5rem;
+        }
+
+        /* footer start here */
+        .footer-container{
+            padding: 1rem 0rem 1rem 0rem;
+        }
+}
+
